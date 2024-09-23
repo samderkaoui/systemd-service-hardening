@@ -193,6 +193,6 @@ systemd-analyze security
 
 Atteignant un résultat vraiment intéressant :
 
-```p3test.service                             4.9 OK        🙂``` 
+![](./p3ok.png)
 
 Bien joué ! Nous avons obtenu un bon résultat en passant de **9.6** à **4.9**, sécurisant partiellement l'ensemble du système.
