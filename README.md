@@ -56,7 +56,7 @@ Voyons maintenant comment renforcer le service actuel pour le rendre plus sûr.
 
 ## Directives Systemd pour le renforcement de la sécurité
 
-Voici une explication détaillée de 11 directives Systemd couramment utilisées pour renforcer la sécurité des services :
+Voici une explication détaillée de 21 directives Systemd couramment utilisées pour renforcer la sécurité des services :
 
 1. `ProtectKernelTunables=yes`
    - Empêche la modification des paramètres du noyau
