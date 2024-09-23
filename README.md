@@ -2,7 +2,7 @@
 
 Ceci est une démonstration de la puissance de **systemd**.
 Depuis les dernières versions, **systemd** a implémenté des fonctionnalités intéressantes. Ces fonctionnalités concernent la sécurité, en particulier le sandboxing.
-Le fichier `simplehttp.service` fournit certaines de ces directives rendues disponibles par **systemd**.
+Le fichier `p3test.service` fournit certaines de ces directives rendues disponibles par **systemd**.
 Les images montrent, étape par étape, comment renforcer le service en utilisant des directives spécifiques et les vérifier avec les outils systemd fournis.
 
 ![](./systemd.jpg)
