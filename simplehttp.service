@@ -1,0 +1,28 @@
+[Unit]
+Description=Tâche qui exécute le démon python http.server  securisé avec étapes : 1-12 / 17-20
+Documentation=https://docs.python.org/3/library/http.server.html
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -m http.server
+ExecStop=/bin/kill -9 $MAINPID
+
+# Fonctionnalités de sandboxing
+PrivateTmp=yes
+ProtectHome=yes
+NoNewPrivileges=true
+ProtectSystem=strict
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE CAP_DAC_READ_SEARCH
+RestrictNamespaces=uts ipc pid user cgroup
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+PrivateDevices=yes
+RestrictSUIDSGID=true
+IPAddressAllow=192.168.1.0/24
+LockPersonality=yes
+ProtectHostname=yes
+ProtectClock=yes
+ProtectKernelLogs=yes
+[Install]
+WantedBy=multi-user.target
