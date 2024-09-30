@@ -196,3 +196,22 @@ Atteignant un résultat vraiment intéressant :
 ![](./p3ok.png)
 
 Bien joué ! Nous avons obtenu un bon résultat en passant de **9.6** à **4.9**, sécurisant partiellement l'ensemble du système.
+
+## Default safe
+
+D'après les 21 options listées, voici celles utilisable facilement sans risques significatifs pour la plupart des services :
+
+1. `ProtectKernelTunables=yes`
+2. `ProtectKernelModules=yes`
+3. `ProtectControlGroups=yes`
+5. `RestrictSUIDSGID=true`
+9. `PrivateTmp=yes`
+10. `NoNewPrivileges=true`
+12. `ProtectHome=yes`
+17. `LockPersonality=yes`
+18. `ProtectHostname=yes`
+19. `ProtectClock=yes`
+20. `ProtectKernelLogs=yes`
+21. `RestrictRealtime=yes`
+
+Ces 12 options renforcent la sécurité de manière significative sans généralement perturber le fonctionnement normal de la plupart des services. Elles limitent l'accès à des ressources sensibles du système et réduisent la surface d'attaque potentielle.
